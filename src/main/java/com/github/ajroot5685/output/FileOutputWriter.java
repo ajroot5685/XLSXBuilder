@@ -11,13 +11,13 @@ public class FileOutputWriter implements OutputWriter {
     private final Path filePath;
     private final String fileName;
 
-    public FileOutputWriter(Path filePath) {
-        this.filePath = filePath;
+    public FileOutputWriter(String filePath) {
+        this.filePath = Path.of(filePath);
         this.fileName = Default.FILE_NAME;
     }
 
-    public FileOutputWriter(Path filePath, String fileName) {
-        this.filePath = filePath;
+    public FileOutputWriter(String filePath, String fileName) {
+        this.filePath = Path.of(filePath);
         this.fileName = fileName;
     }
 

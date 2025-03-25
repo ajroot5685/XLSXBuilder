@@ -6,12 +6,12 @@ import java.util.Set;
 
 public class ExcelCreateData {
     private Set<String> headers;
-    private List<Map<String, String>> excelData;
+    private List<Map<String, String>> bodies;
     private String title;
 
     public ExcelCreateData(Set<String> headers, List<Map<String, String>> excelData, String title) {
         this.headers = headers;
-        this.excelData = excelData;
+        this.bodies = excelData;
         this.title = title;
     }
 
@@ -19,8 +19,8 @@ public class ExcelCreateData {
         return headers;
     }
 
-    public List<Map<String, String>> getExcelData() {
-        return excelData;
+    public List<Map<String, String>> getBodies() {
+        return bodies;
     }
 
     public String getTitle() {
