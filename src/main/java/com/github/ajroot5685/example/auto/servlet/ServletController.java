@@ -12,6 +12,6 @@ public class ServletController {
 
     //    @GetMapping("")
     public void example(HttpServletResponse response) {
-        service.fileExample(response);
+        service.servletExample(response);
     }
 }

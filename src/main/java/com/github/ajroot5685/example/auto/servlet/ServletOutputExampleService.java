@@ -12,7 +12,7 @@ public class ServletOutputExampleService {
     // If not, it sticks automatically.
     private final String fileName = "fileName.xlsx";
 
-    public void fileExample(HttpServletResponse response) {
+    public void servletExample(HttpServletResponse response) {
         List<AutoExampleDto> excelDto = List.of(
                 new AutoExampleDto("1", "example"),
                 new AutoExampleDto("2", "example2")
